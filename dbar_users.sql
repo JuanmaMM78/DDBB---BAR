@@ -18,28 +18,29 @@ USE `dbar`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `user`
+-- Table structure for table `users`
 --
 
-DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `user` (
+CREATE TABLE `users` (
   `id_user` int NOT NULL AUTO_INCREMENT,
   `name_user` varchar(45) NOT NULL,
-  `password` varchar(45) NOT NULL,
+  `password_user` varchar(245) NOT NULL,
+  `mail_user` varchar(255) NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `user`
+-- Dumping data for table `users`
 --
 
-LOCK TABLES `user` WRITE;
-/*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'juan','Admin123'),(2,'ivan','Admin13');
-/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'juan','$2a$11$sL5m60wOGY7vl3QrXlIIRegxBBRhkCLD7WXREUlTzfciixEJ8m.V6','jumarlinares@gmail.es'),(2,'ivan','$2a$11$R4qjqQImHjzCH1ZMHxFpyeFdoxnt08KEEDXwP0uX7chqRc4TEUHa2','ivnp31@gmail.com'),(3,'Paco','$2a$11$m0HMTFK2mRMT3TLZNjAuoeZslyyxy9h5abBnjoQgOnpKif8uZvaY6','user@app.es');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-20 12:12:35
+-- Dump completed on 2022-12-20 18:47:15

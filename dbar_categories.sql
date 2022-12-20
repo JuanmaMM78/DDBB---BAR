@@ -27,6 +27,7 @@ DROP TABLE IF EXISTS `categories`;
 CREATE TABLE `categories` (
   `id_category` int NOT NULL AUTO_INCREMENT,
   `name_category` varchar(45) NOT NULL,
+  `image_category` varchar(245) NOT NULL,
   PRIMARY KEY (`id_category`)
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -37,7 +38,7 @@ CREATE TABLE `categories` (
 
 LOCK TABLES `categories` WRITE;
 /*!40000 ALTER TABLE `categories` DISABLE KEYS */;
-INSERT INTO `categories` VALUES (1,'cevezas'),(2,'refrescos'),(3,'vinos'),(4,'cafe e infusiones'),(5,'tapas'),(6,'raciones'),(7,'bocadillos'),(8,'postres'),(9,'licores'),(10,'desayunos'),(11,'comp. desayunos'),(12,'otros');
+INSERT INTO `categories` VALUES (1,'cevezas','../../../assets/images/beer.jpg'),(2,'refrescos','../../../assets/images/beer.jpg'),(3,'vinos','../../../assets/images/beer.jpg'),(4,'cafe e infusiones','../../../assets/images/beer.jpg'),(5,'tapas','../../../assets/images/beer.jpg'),(6,'raciones','../../../assets/images/beer.jpg'),(7,'bocadillos','../../../assets/images/beer.jpg'),(8,'postres','../../../assets/images/beer.jpg'),(9,'licores','../../../assets/images/beer.jpg'),(10,'desayunos','../../../assets/images/beer.jpg'),(11,'comp. desayunos','../../../assets/images/beer.jpg'),(12,'otros','../../../assets/images/beer.jpg');
 /*!40000 ALTER TABLE `categories` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-20 12:12:35
+-- Dump completed on 2022-12-20 18:47:15
