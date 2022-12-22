@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `dbar` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `dbar`;
 -- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
 -- Host: localhost    Database: dbar
@@ -26,9 +24,10 @@ DROP TABLE IF EXISTS `tables`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tables` (
   `id_table` int NOT NULL AUTO_INCREMENT,
+  `status` enum('libre','ocupado','pendiente','off') NOT NULL,
   `comment` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id_table`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +36,7 @@ CREATE TABLE `tables` (
 
 LOCK TABLES `tables` WRITE;
 /*!40000 ALTER TABLE `tables` DISABLE KEYS */;
-INSERT INTO `tables` VALUES (1,'mesa 2 pex'),(2,'mesa 5 pex'),(3,'mesa 2 pe'),(4,'mesa 4 pex'),(5,'mesa 4 pex');
+INSERT INTO `tables` VALUES (1,'libre','mesa 10 pex'),(2,'libre','mesa 5 pex'),(3,'libre','mesa 2 pe'),(4,'libre','mesa 4 pex'),(5,'libre','mesa 4 pex');
 /*!40000 ALTER TABLE `tables` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-22  9:52:39
+-- Dump completed on 2022-12-22 12:06:26

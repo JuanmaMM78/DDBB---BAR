@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `dbar` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `dbar`;
 -- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
 -- Host: localhost    Database: dbar
@@ -39,7 +37,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'juan','$2a$11$z1iq6DRG8FIC298UGiRfDueowYEAYj6J.uKlvZA4OgeIDx8ogz4MK','jumarlinares@gmail.es'),(2,'ivan','$2a$11$R4qjqQImHjzCH1ZMHxFpyeFdoxnt08KEEDXwP0uX7chqRc4TEUHa2','ivnp31@gmail.com'),(3,'Paco','$2a$11$m0HMTFK2mRMT3TLZNjAuoeZslyyxy9h5abBnjoQgOnpKif8uZvaY6','user@app.es');
+INSERT INTO `users` VALUES (1,'juan','$2a$11$FWyr721HlJUgy5B5jZ6QoOpn9FIeuveSJX5lrK5m0PE.XT5jbPZn.','jumarlinares@gmail.es'),(2,'ivan','$2a$11$R4qjqQImHjzCH1ZMHxFpyeFdoxnt08KEEDXwP0uX7chqRc4TEUHa2','ivnp31@gmail.com'),(3,'Paco','$2a$11$m0HMTFK2mRMT3TLZNjAuoeZslyyxy9h5abBnjoQgOnpKif8uZvaY6','user@app.es');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-22  9:52:39
+-- Dump completed on 2022-12-22 12:06:26

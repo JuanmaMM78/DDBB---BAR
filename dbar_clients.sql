@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `dbar` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `dbar`;
 -- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
 -- Host: localhost    Database: dbar
@@ -25,13 +23,13 @@ DROP TABLE IF EXISTS `clients`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `clients` (
-  `id_clients` int NOT NULL AUTO_INCREMENT,
+  `id_client` int NOT NULL AUTO_INCREMENT,
   `name_client` varchar(45) NOT NULL,
   `id_table` int NOT NULL,
   `num_order` int NOT NULL DEFAULT '0',
   `num_tiket` int NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id_clients`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`id_client`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +38,7 @@ CREATE TABLE `clients` (
 
 LOCK TABLES `clients` WRITE;
 /*!40000 ALTER TABLE `clients` DISABLE KEYS */;
-INSERT INTO `clients` VALUES (1,'juan',1,0,0),(2,'ivan',2,0,0),(3,'Paco',1,0,0),(4,'Paco',1,0,0);
+INSERT INTO `clients` VALUES (1,'juan',1,0,0),(2,'ivan',2,0,0),(3,'Paco',1,0,0),(5,'Andres',1,0,0);
 /*!40000 ALTER TABLE `clients` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-22  9:52:39
+-- Dump completed on 2022-12-22 12:06:26
