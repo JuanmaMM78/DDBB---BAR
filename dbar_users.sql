@@ -39,7 +39,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'juan','$2a$11$sL5m60wOGY7vl3QrXlIIRegxBBRhkCLD7WXREUlTzfciixEJ8m.V6','jumarlinares@gmail.es'),(2,'ivan','$2a$11$R4qjqQImHjzCH1ZMHxFpyeFdoxnt08KEEDXwP0uX7chqRc4TEUHa2','ivnp31@gmail.com'),(3,'Paco','$2a$11$m0HMTFK2mRMT3TLZNjAuoeZslyyxy9h5abBnjoQgOnpKif8uZvaY6','user@app.es');
+INSERT INTO `users` VALUES (1,'juan','$2a$11$z1iq6DRG8FIC298UGiRfDueowYEAYj6J.uKlvZA4OgeIDx8ogz4MK','jumarlinares@gmail.es'),(2,'ivan','$2a$11$R4qjqQImHjzCH1ZMHxFpyeFdoxnt08KEEDXwP0uX7chqRc4TEUHa2','ivnp31@gmail.com'),(3,'Paco','$2a$11$m0HMTFK2mRMT3TLZNjAuoeZslyyxy9h5abBnjoQgOnpKif8uZvaY6','user@app.es');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-20 18:47:15
+-- Dump completed on 2022-12-22  9:52:39

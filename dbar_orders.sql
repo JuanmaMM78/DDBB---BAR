@@ -26,12 +26,13 @@ DROP TABLE IF EXISTS `orders`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `orders` (
   `id_orders` int NOT NULL AUTO_INCREMENT,
-  `id_cliente` int NOT NULL,
+  `id_client` int NOT NULL,
   `id_product` int NOT NULL,
   `lot` int NOT NULL,
   `id_table` int NOT NULL,
+  `num_tiket` int NOT NULL,
   PRIMARY KEY (`id_orders`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +41,7 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
-INSERT INTO `orders` VALUES (1,1,1,2,1),(2,1,1,1,1),(3,2,1,3,1),(4,2,2,1,1);
+INSERT INTO `orders` VALUES (1,1,1,2,1,0),(2,1,1,1,1,0),(3,2,1,3,1,0),(4,2,2,1,1,0),(5,1,1,1,1,0),(6,1,1,1,1,0),(7,1,1,1,1,0),(8,1,1,1,1,0),(9,1,1,1,1,0),(10,1,1,1,1,0),(11,1,3,2,1,0),(12,1,1,1,1,0),(13,1,3,2,1,0),(14,1,1,1,1,0),(15,1,3,2,1,0),(16,1,1,1,1,2),(17,1,3,2,1,2),(18,1,1,1,1,2),(19,1,3,2,1,2);
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-20 18:47:15
+-- Dump completed on 2022-12-22  9:52:39
